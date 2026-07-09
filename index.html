@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Aurelia | Gioielli eleganti e senza tempo</title>
+  <meta name="description" content="Landing page responsive per un brand di gioielli eleganti, realizzata con HTML, CSS e Bootstrap." />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="top">
+  
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container navbar-layout">
+
+        <!-- Logo / Brand -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#top" aria-label="Torna all'inizio">
+            <span class="brand-logo-frame">
+                <img src="./logo.png" alt="Logo Aurelia" class="brand-logo">
+            </span>
+            <span class="brand-name">Aurelia</span>
+        </a>
+
+        <!-- Hamburger menu mobile -->
+        <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbar" 
+            aria-controls="navbar" 
+            aria-expanded="false" 
+            aria-label="Apri o chiudi il menu di navigazione">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu centrale + icone destra -->
+        <div class="collapse navbar-collapse navbar-main" id="navbar">
+
+            <!-- Menu centrale -->
+            <ul class="navbar-nav navbar-menu mx-auto align-items-md-center gap-md-3">
+                <li class="nav-item">
+                    <a href="#top" class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#story" class="nav-link">Chi siamo</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#prodotti" class="nav-link">Gioielli</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#contatti" class="nav-link nav-cta">Contatti</a>
+                </li>
+            </ul>
+
+            <!-- Icone destra -->
+            <div class="navbar-actions d-flex align-items-center gap-3">
+                <a href="#" class="nav-icon" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="nav-icon" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="nav-icon" aria-label="Cerca">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+
+                <a href="#" class="nav-icon" aria-label="Preferiti">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero d-flex align-items-center text-center">
+      <div class="container">
+        <p class="section-kicker">Gioielli raffinati per ogni momento</p>
+        <h1>Eleganza senza tempo, creata per brillare</h1>
+        <p class="hero-text mx-auto">
+          Scopri gioielli raffinati che esaltano ogni momento: dove l’oro incontra l’emozione
+          e ogni dettaglio racconta la tua storia.
+        </p>
+        <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mt-4">
+          <a href="#prodotti" class="btn btn-gold">Scopri la collezione</a>
+          <a href="#story" class="btn btn-outline-light">La nostra storia</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="story section-padding">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-md-5 text-center">
+            <div class="circle-image mx-auto">
+              <img src="./IMAGE/anello.png" alt="Anello elegante Aurelia" />
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <p class="section-kicker">Chi siamo</p>
+            <h2>Dettagli preziosi, pensati per durare</h2>
+            <p class="text-secondary-light">
+              Aurelia nasce dall’idea di creare gioielli essenziali, luminosi e versatili:
+              accessori capaci di valorizzare lo stile personale senza perdere raffinatezza.
+            </p>
+            <p class="text-secondary-light mb-0">
+              Ogni creazione unisce linee pulite, cura del dettaglio e un’estetica moderna,
+              pensata per accompagnare occasioni speciali e gesti quotidiani.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="prodotti" class="section-padding bg-section-dark">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-kicker">Collezione</p>
+          <h2>I nostri prodotti</h2>
+          <p class="section-subtitle mx-auto">
+            Una selezione elegante di gioielli pensati per completare il tuo stile con luce,
+            equilibrio e personalità.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-3 d-flex">
+            <article class="card product-card h-100">
+              <img src="./IMAGE/collane.png" class="card-img-top" alt="Collane eleganti Aurelia" />
+              <div class="card-body">
+                <h3 class="card-title">Collane</h3>
+                <p class="card-text">Minimal, eleganti, essenziali. Il dettaglio luminoso che completa ogni look.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 d-flex">
+            <article class="card product-card h-100">
+              <img src="./IMAGE/anelli.png" class="card-img-top" alt="Anelli raffinati Aurelia" />
+              <div class="card-body">
+                <h3 class="card-title">Anelli</h3>
+                <p class="card-text">Forme iconiche e dettagli raffinati, pensati per raccontare carattere e semplicità.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 d-flex">
+            <article class="card product-card h-100">
+              <img src="./IMAGE/bracciali.png" class="card-img-top" alt="Bracciali eleganti Aurelia" />
+              <div class="card-body">
+                <h3 class="card-title">Bracciali</h3>
+                <p class="card-text">Linee leggere che seguono il movimento, ideali per uno stile curato ogni giorno.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 d-flex">
+            <article class="card product-card h-100">
+              <img src="./IMAGE/orecchini.png" class="card-img-top" alt="Orecchini sofisticati Aurelia" />
+              <div class="card-body">
+                <h3 class="card-title">Orecchini</h3>
+                <p class="card-text">Punti luce e design sofisticato per esaltare il volto con discreta eleganza.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-kicker">Gallery</p>
+          <h2>I dettagli che fanno la differenza</h2>
+          <p class="section-subtitle mx-auto">
+            Una piccola selezione visuale pensata per mostrare materiali, linee e atmosfera del brand.
+          </p>
+        </div>
+
+        <div class="row g-4 gallery-grid">
+          <div class="col-md-4">
+            <img src="./IMAGE/collane.png" alt="Dettaglio collana elegante" />
+          </div>
+          <div class="col-md-4">
+            <img src="./IMAGE/anelli.png" alt="Dettaglio anello elegante" />
+          </div>
+          <div class="col-md-4">
+            <img src="./IMAGE/orecchini.png" alt="Dettaglio orecchini elegante" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contatti" class="section-padding bg-section-dark">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <p class="section-kicker">Contatti</p>
+            <h2>Trova il gioiello giusto per te</h2>
+            <p class="text-secondary-light">
+              Hai bisogno di informazioni sulla collezione o vuoi ricevere un consiglio?
+              Scrivici: saremo felici di aiutarti a scegliere il dettaglio perfetto.
+            </p>
+
+            <div class="contact-info mt-4">
+              <p><i class="fa-solid fa-envelope"></i> info@aurelia.it</p>
+              <p><i class="fa-solid fa-location-dot"></i> Piacenza, Italia</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <form class="contact-card">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name" placeholder="Il tuo nome" />
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="nome@email.com" />
+              </div>
+
+              <div class="mb-4">
+                <label for="message" class="form-label">Messaggio</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Come possiamo aiutarti?"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold w-100">Invia richiesta</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p class="mb-1">Experoz — Landing page responsive sviluppata con HTML, CSS e Bootstrap.</p>
+      <small>Progetto portfolio · 2026</small>
+    </div>
+  </footer>
+
+  <a href="#top" class="scroll-top" aria-label="Torna all'inizio">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>
