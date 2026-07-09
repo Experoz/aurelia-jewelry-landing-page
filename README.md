@@ -2,6 +2,10 @@
 
 Responsive landing page for a fictional jewelry brand, built with HTML, CSS, Bootstrap and Font Awesome.
 
+## Live Demo
+
+[View live project](https://experoz.github.io/aurelia-jewelry-landing-page/)
+
 ## Overview
 
 Aurelia is a luxury-inspired jewelry landing page designed to present a fictional brand through a clean and elegant user interface.
