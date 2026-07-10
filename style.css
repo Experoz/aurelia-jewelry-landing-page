@@ -525,8 +525,7 @@ h2 {
 
   #story,
   #prodotti,
-  #gallery,
-  #contatti {
+  #gallery {
     min-height: auto;
   }
 
@@ -597,5 +596,11 @@ h2 {
   .gallery-carousel .carousel-control-prev,
   .gallery-carousel .carousel-control-next {
     width: 18%;
+  }
+
+  #contatti {
+    min-height: auto;
+    padding-top: 72px;
+    padding-bottom: 32px;
   }
 }
