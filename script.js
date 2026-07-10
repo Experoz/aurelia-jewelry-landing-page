@@ -1,6 +1,6 @@
 // Gestisce la navigazione mobile:
 // chiude il menu hamburger e poi scorre alla sezione corretta,
-// compensando l'altezza della navbar fixed.
+// compensando l'altezza della navbar fixed solo quando il menu mobile è aperto.
 
 document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.querySelector(".custom-navbar");
@@ -44,25 +44,25 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
+      if (!navbarCollapse || !navbarCollapse.classList.contains("show")) {
+        return;
+      }
+
       event.preventDefault();
 
-      if (navbarCollapse && navbarCollapse.classList.contains("show")) {
-        const collapseInstance = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
+      const collapseInstance = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
 
-        navbarCollapse.addEventListener(
-          "hidden.bs.collapse",
-          function () {
-            requestAnimationFrame(function () {
-              scrollToTarget(targetId);
-            });
-          },
-          { once: true }
-        );
+      navbarCollapse.addEventListener(
+        "hidden.bs.collapse",
+        function () {
+          requestAnimationFrame(function () {
+            scrollToTarget(targetId);
+          });
+        },
+        { once: true }
+      );
 
-        collapseInstance.hide();
-      } else {
-        scrollToTarget(targetId);
-      }
+      collapseInstance.hide();
     });
   });
 });
