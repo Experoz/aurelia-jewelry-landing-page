@@ -46,6 +46,8 @@ img {
   background: rgba(15, 15, 16, 0.9);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-soft);
+  top: 0;
+  z-index: 1050;
 }
 
 .custom-navbar > .container {
@@ -486,6 +488,21 @@ h2 {
     font-size: 1rem;
     line-height: 1.75;
   }
+
+  .custom-navbar {
+  min-height: 64px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.navbar-brand {
+  align-items: center;
+}
+
+.navbar-toggler {
+  margin-top: 0;
+  align-self: center;
+}
 }
 
 
@@ -498,10 +515,23 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
+    align-self: center;
   }
 
   .navbar-main {
     display: block;
+    flex-basis: 100%;
     width: 100%;
     margin-top: 16px;
   }
@@ -602,5 +632,23 @@ h2 {
     min-height: auto;
     padding-top: 72px;
     padding-bottom: 32px;
+  }
+
+  #contatti {
+    min-height: auto;
+    padding-top: 88px;
+    padding-bottom: 32px;
+  }
+
+  .contact-card {
+    margin-top: 32px;
+    padding: 1.4rem;
+  }
+
+  .scroll-top {
+    width: 42px;
+    height: 42px;
+    right: 14px;
+    bottom: 14px;
   }
 }
